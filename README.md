@@ -1,50 +1,27 @@
-# React + TypeScript + Vite
+# Patient Card
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Patient Card** es una tarjeta interactiva que muestra información básica de un paciente, incluyendo su nombre, edad, diagnóstico principal y un botón para ver más detalles.
 
-Currently, two official plugins are available:
+## Descripción
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Esta aplicación fue desarrollada utilizando **React** y **TypeScript**. Muestra una tarjeta de paciente que contiene:
+- Nombre del paciente
+- Edad
+- Diagnóstico principal
+- Un botón que permite mostrar más detalles sobre el paciente.
 
-## Expanding the ESLint configuration
+## Tecnologías usadas
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **React**: Biblioteca de JavaScript para construir interfaces de usuario.
+- **TypeScript**: Lenguaje de programación que extiende JavaScript con tipos estáticos.
+- **Bulma**: Framework CSS para diseño responsivo.
+- **CSS**: Estilos personalizados para mejorar la interfaz.
 
-- Configure the top-level `parserOptions` property like this:
+## Instalación
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+Para instalar y ejecutar el proyecto, sigue estos pasos:
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+1. Clona el repositorio:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+   ```bash
+   git clone https://github.com/yhonaMC/patient-card.git
