@@ -25,3 +25,13 @@ Para instalar y ejecutar el proyecto, sigue estos pasos:
 
    ```bash
    git clone https://github.com/yhonaMC/patient-card.git
+
+2. Ejecutar el siguiente comando:
+
+   ```bash
+   yarn install
+
+3. Ejecutar el siguiente comando para ejecutar proyecto:
+
+   ```bash
+   yarn dev
