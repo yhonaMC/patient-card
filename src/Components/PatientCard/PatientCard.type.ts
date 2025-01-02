@@ -6,4 +6,5 @@ export interface PatientCardProps {
   address: string
   website: string
   image: string
+  titleBack: string
 }

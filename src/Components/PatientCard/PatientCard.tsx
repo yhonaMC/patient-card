@@ -2,6 +2,7 @@ import { useState } from 'react'
 import 'bulma/css/bulma.min.css'
 import './PatientCard.css'
 import { PatientCardProps } from './PatientCard.type'
+import QRCode from '../../assets/qr-code-148732_640.webp'
 
 export default function PatientCard({
   patientNumber,
@@ -10,7 +11,8 @@ export default function PatientCard({
   name,
   address,
   website,
-  image
+  image,
+  titleBack
 }: PatientCardProps) {
   const [isFlipped, setIsFlipped] = useState(false)
 
@@ -72,13 +74,10 @@ export default function PatientCard({
             <div className="pattern-overlay"></div>
 
             <div className="has-text-centered">
-              <p className="title is-5 mb-4">WISEMED</p>
+              <p className="title is-5 mb-4">{titleBack}</p>
 
               <div className="qr-code">
-                <img
-                  src="https://cdn.pixabay.com/photo/2013/07/12/14/45/qr-code-148732_640.png"
-                  alt="QR Code"
-                />
+                <img src={QRCode} alt="QR Code" />
               </div>
 
               <div className="content mt-4">

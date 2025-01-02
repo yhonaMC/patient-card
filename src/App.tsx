@@ -14,6 +14,7 @@ function App() {
           address="Avenida Providencia, Santiago"
           website="www.WiseMed.com"
           image={Avatar}
+          titleBack="WISEMED"
         />
       </div>
     </>
